@@ -1,12 +1,15 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "react-query";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import RepoItem from "./components/RepoItem";
+import RepoList from "./components/RepoList";
 import DeveloperItem from "./components/DeveloperItem";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <Header />
       <h1 className="text-6xl">GitHub Trending Clone</h1>
       <Router>
@@ -22,7 +25,7 @@ function App() {
         </nav>
         <Switch>
           <Route exact path="/">
-            <RepoItem />
+            <RepoList />
           </Route>
           <Route path="/developers">
             <DeveloperItem />
@@ -30,7 +33,7 @@ function App() {
         </Switch>
       </Router>
       <Footer />
-    </>
+    </QueryClientProvider>
   );
 }
 
