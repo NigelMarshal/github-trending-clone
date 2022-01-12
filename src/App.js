@@ -3,7 +3,7 @@ import { QueryClientProvider, QueryClient } from "react-query";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RepoList from "./components/RepoList";
-import DeveloperItem from "./components/DeveloperItem";
+import DeveloperList from "./components/DeveloperList";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +28,7 @@ function App() {
             <RepoList />
           </Route>
           <Route path="/developers">
-            <DeveloperItem />
+            <DeveloperList />
           </Route>
         </Switch>
       </Router>
