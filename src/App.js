@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "react-query";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import RepoList from "./components/RepoList";
-import DeveloperList from "./components/DeveloperList";
+import RepoList from "./components/Repositories/RepoList";
+import DeveloperList from "./components/Developers/DeveloperList";
 
 const queryClient = new QueryClient();
 
