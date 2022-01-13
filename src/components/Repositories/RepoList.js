@@ -4,9 +4,7 @@ import RepoItem from "./RepoItem";
 
 //Fetch data through CORS proxy
 const fetchRepos = () => {
-  return axios.get(
-    "https://cors-anywhere.herokuapp.com/https://gh-trending-api.herokuapp.com/repositories"
-  );
+  return axios.get("https://gh-trending-api.herokuapp.com/repositories");
 };
 function Repo() {
   const { isLoading, data, isError, error } = useQuery("repos", fetchRepos);

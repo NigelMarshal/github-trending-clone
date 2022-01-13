@@ -15,13 +15,16 @@ module.exports = {
       "6xl": "4rem",
       "7xl": "5rem",
     },
-    colors: {
-      "gh-gray-900": "#161b22",
-      "gh-gray-500": "#c9d1d9",
-      "gh-gray-100": "#8b949e",
-      "gh-border": "#30363d",
+    extend: {
+      colors: {
+        "gh-gray-900": "#161b22",
+        "gh-white": "#f0f6fc",
+        "gh-gray-500": "#c9d1d9",
+        "gh-gray-100": "#8b949e",
+        "gh-border": "#30363d",
+        "gh-light-blue": "#1f6feb",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

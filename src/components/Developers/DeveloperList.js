@@ -4,9 +4,7 @@ import DeveloperItem from "./DeveloperItem";
 
 //Fetch data through CORS proxy
 const fetchDevelopers = () => {
-  return axios.get(
-    "https://cors-anywhere.herokuapp.com/https://gh-trending-api.herokuapp.com/developers"
-  );
+  return axios.get("https://gh-trending-api.herokuapp.com/developers");
 };
 function DeveloperList() {
   const { isLoading, data, isError, error } = useQuery(
