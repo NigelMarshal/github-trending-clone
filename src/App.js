@@ -17,24 +17,26 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Header />
-      <Wrapper className="container sm:container mx-auto">
-        <Router>
-          <NavBar />
-          <Switch>
-            <Route exact path="/">
-              <Redirect to="/trending" />
-            </Route>
-            <Route path="/trending">
-              <RepoList />
-            </Route>
-            <Route path="/developers">
-              <DeveloperList />
-            </Route>
-          </Switch>
-        </Router>
-      </Wrapper>
-      <Footer />
+      <div className="bg-gray-900">
+        <Header />
+        <Wrapper className="container sm:container mx-auto">
+          <Router>
+            <NavBar />
+            <Switch>
+              <Route exact path="/">
+                <Redirect to="/trending" />
+              </Route>
+              <Route path="/trending">
+                <RepoList />
+              </Route>
+              <Route path="/developers">
+                <DeveloperList />
+              </Route>
+            </Switch>
+          </Router>
+        </Wrapper>
+        <Footer />
+      </div>
     </QueryClientProvider>
   );
 }
