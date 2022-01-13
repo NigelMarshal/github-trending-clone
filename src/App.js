@@ -17,7 +17,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="bg-gray-900">
+      <div className="bg-gh-gray-800">
         <Header />
         <Wrapper className="container sm:container mx-auto">
           <Router>
@@ -34,8 +34,8 @@ function App() {
               </Route>
             </Switch>
           </Router>
+          <Footer />
         </Wrapper>
-        <Footer />
       </div>
     </QueryClientProvider>
   );

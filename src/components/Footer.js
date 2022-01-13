@@ -1,9 +1,29 @@
+import { Icon } from "@iconify/react";
+
 function Footer() {
   return (
-    <footer className="container container-lg">
-      <div className="relative flex justify-center py-5 border-t border-gray-500 text-gray-500">
-        <ul className="flex flex-wrap w-full justify-center">
-          <li className="mr-2 text-blue-500 hover:underline">
+    <footer className="container container-lg mt-5">
+      <div className="relative flex justify-center py-5 border-t border-gh-border text-gray-500">
+        <ul className="flex w-full  text-xs">
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                className="mr-2 mb-2 align-text-bottom inline-block hover:text-gh-gray-100"
+                icon="octicon:mark-github-16"
+                height={24}
+                width={24}
+                inline={true}
+              />
+            </a>
+          </li>
+          <li className="mr-6 text-gray-400">
+            © {new Date().getFullYear()} GitHub, Inc.
+          </li>
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://docs.github.com/en/github/site-policy/github-terms-of-service"
               target="_blank"
@@ -12,7 +32,7 @@ function Footer() {
               Terms
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://docs.github.com/en/github/site-policy/github-privacy-statement"
               target="_blank"
@@ -21,7 +41,7 @@ function Footer() {
               Privacy
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://github.com/security"
               target="_blank"
@@ -30,7 +50,7 @@ function Footer() {
               Security
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://www.githubstatus.com/"
               target="_blank"
@@ -39,7 +59,7 @@ function Footer() {
               Status
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://docs.github.com/"
               target="_blank"
@@ -49,7 +69,7 @@ function Footer() {
             </a>
           </li>
 
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://support.github.com/?tags=dotcom-footer"
               target="_blank"
@@ -58,7 +78,7 @@ function Footer() {
               Contact Github
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://github.com/pricing"
               target="_blank"
@@ -67,7 +87,7 @@ function Footer() {
               Pricing
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://docs.github.com/"
               target="_blank"
@@ -76,7 +96,7 @@ function Footer() {
               API
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://services.github.com/"
               target="_blank"
@@ -85,7 +105,7 @@ function Footer() {
               Training
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://github.blog/"
               target="_blank"
@@ -94,7 +114,7 @@ function Footer() {
               Blog
             </a>
           </li>
-          <li className="mr-2 text-blue-500 hover:underline">
+          <li className="mr-6 text-blue-500 hover:underline">
             <a
               href="https://github.com/about"
               target="_blank"
@@ -102,9 +122,6 @@ function Footer() {
             >
               About
             </a>
-          </li>
-          <li className="mr-2 text-gray-400">
-            © {new Date().getFullYear()} GitHub, Inc.
           </li>
         </ul>
       </div>

@@ -1,0 +1,6 @@
+.trending-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 1012px;
+}

@@ -18,11 +18,14 @@ module.exports = {
     extend: {
       colors: {
         "gh-gray-900": "#161b22",
+        "gh-gray-800": "#0d1117",
+        "gh-gray-700": "#21262d",
         "gh-white": "#f0f6fc",
         "gh-gray-500": "#c9d1d9",
         "gh-gray-100": "#8b949e",
         "gh-border": "#30363d",
         "gh-light-blue": "#1f6feb",
+        "gh-orange": "#c06a08",
       },
     },
   },

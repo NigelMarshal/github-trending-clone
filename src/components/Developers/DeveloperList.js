@@ -16,7 +16,9 @@ function DeveloperList() {
   return (
     <div className="rounded border-gray-500">
       {isError && <h2>{error.message}</h2>}
-      {isLoading && <p>Fetching trending items...</p>}
+      {isLoading && (
+        <p className="m-2 text-white">Fetching trending items...</p>
+      )}
       {data &&
         data?.data.map((developer) => (
           <DeveloperItem key={developer.rank} developer={developer} />

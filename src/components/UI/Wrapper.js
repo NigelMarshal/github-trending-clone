@@ -1,5 +1,5 @@
 import React from "react";
-import "./Wrapper.css";
+import "../../assets/css/wrapper.css";
 
 const Wrapper = (props) => {
   const classes = "trending-wrapper " + props.className;
