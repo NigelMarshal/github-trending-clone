@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 function DeveloperItem({ developer }) {
   return (
-    <article className="border border-gh-border border-t-0 p-4 flex">
+    <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4 flex">
       <a className="text-gray-500" href={"#pa-" + developer.username}>
         {developer.rank}
       </a>

@@ -10,7 +10,7 @@ function Repo() {
   const { isLoading, data, isError, error } = useQuery("repos", fetchRepos);
   //Render list of trending repos
   return (
-    <div className="rounded border-gray-500">
+    <div className="rounded border border-gh-border border-t-0">
       {isError && <h2>{error.message}</h2>}
       {isLoading && (
         <p className="m-2 text-white">Fetching trending items...</p>

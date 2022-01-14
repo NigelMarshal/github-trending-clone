@@ -4,3 +4,15 @@
   flex-direction: column;
   max-width: 1012px;
 }
+
+.pdng-responsive {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+
+@media (min-width: 544px) {
+  .pdng-responsive {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+}

@@ -19,7 +19,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="bg-gh-gray-800">
         <Header />
-        <Wrapper className="container sm:container mx-auto">
+        <Wrapper className="container sm:container mx-auto pdng-responsive">
           <Router>
             <NavBar />
             <Switch>

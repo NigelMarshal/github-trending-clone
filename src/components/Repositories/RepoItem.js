@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 function RepoItem({ repo }) {
   return (
-    <article className="border border-gh-border border-t-0 p-4">
+    <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4">
       <div className="float-right">
         <button className="text-white text-xs font-bold py-1 px-5 flex bg-gh-gray-900 rounded border-gh-border border items-center">
           <Icon
@@ -74,7 +74,7 @@ function RepoItem({ repo }) {
         )}
         <span className="ml-auto">
           <Icon
-            className="text-gh-gray-100 align-text-bottom inline-block"
+            className="text-gh-gray-100 align-text-bottom inline-block mr-1"
             icon="octicon:star-16"
             height={16}
             width={16}
