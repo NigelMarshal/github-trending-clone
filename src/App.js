@@ -9,7 +9,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RepoList from "./components/Repositories/RepoList";
 import DeveloperList from "./components/Developers/DeveloperList";
-import NavBar from "./components/NavBar";
 import Wrapper from "./components/UI/Wrapper";
 
 const queryClient = new QueryClient();
@@ -21,7 +20,6 @@ function App() {
         <Header />
         <Wrapper className="container sm:container mx-auto pdng-responsive">
           <Router>
-            <NavBar />
             <Switch>
               <Route exact path="/">
                 <Redirect to="/trending" />
