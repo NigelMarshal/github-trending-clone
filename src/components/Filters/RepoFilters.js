@@ -25,51 +25,64 @@ function customTheme(theme) {
       ...theme.colors,
       primary25: "#1f6feb",
       primary: "#1f6feb",
+      neutral0: "white",
+      neutral80: "#8b949e",
+      neutral20: "#8b949e",
     },
-    control: () => ({}),
+    control: (provided) => ({
+      ...provided,
+    }),
   };
 }
 
 const customStyles = {
-  option: (provided, state) => ({
-    ...provided,
-  }),
-  control: (styles) => ({
-    // none of react-select's styles are passed to <Control />
-    ...styles,
+  control: (css) => ({
+    ...css,
     border: "none",
     backgroundColor: "transparent",
     display: "flex",
-    color: "white",
   }),
+  menu: ({ width, ...css }) => ({
+    ...css,
+    width: "max-content",
+  }),
+  option: (css) => ({ ...css, width: 150 }),
   indicatorSeparator: () => ({}),
 };
 
 const RepoFilters = () => {
   return (
-    <div className="flex flex-col md:flex-row sm:flex-row mt-3 sm:mt-0 md:mt-0">
-      <Select
-        styles={customStyles}
-        isSearchable
-        theme={customTheme}
-        className="mr-3"
-        options={optionsSpokenLanguages}
-        placeholder="Spoken Language: Any"
-      />
-      <Select
-        styles={customStyles}
-        isSearchable
-        theme={customTheme}
-        className="mr-3"
-        options={optionsProgrammingLanguages}
-        placeholder="Language: Any"
-      />
-      <Select
-        styles={customStyles}
-        className="mr-3"
-        options={optionsDates}
-        placeholder="Date Range: Today"
-      />
+    <div className="flex flex-col text-sm md:flex-row sm:flex-row mt-3 sm:mt-0 md:mt-0">
+      <div style={{ width: "210px" }}>
+        <Select
+          styles={customStyles}
+          isSearchable
+          theme={customTheme}
+          className="mr-3"
+          options={optionsSpokenLanguages}
+          placeholder="Spoken Language: Any"
+        />
+      </div>
+      <div style={{ width: "160px" }}>
+        <Select
+          styles={customStyles}
+          isSearchable
+          theme={customTheme}
+          className="mr-3"
+          options={optionsProgrammingLanguages}
+          placeholder="Language: Any"
+        />
+      </div>
+      <div style={{ width: "190px" }}>
+        <Select
+          isSearchable={false}
+          theme={customTheme}
+          styles={customStyles}
+          className="mr-3"
+          options={optionsDates}
+          placeholder="Date Range: Today"
+        />
+      </div>
     </div>
   );
 };

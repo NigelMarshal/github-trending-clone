@@ -26,7 +26,7 @@ function DeveloperItem({ developer }) {
             </p>
           </div>
           <div className="w-1/2">
-            <div className="m-3">
+            <div className="lg:m-0 md:m-0 m-3">
               {developer.popularRepository.repositoryName && (
                 <div>
                   <div className="uppercase text-xs text-gh-gray-100 ">
@@ -60,7 +60,7 @@ function DeveloperItem({ developer }) {
             </div>
           </div>
         </div>
-        <div className="w-5/12 flex sm:justify-end items-center">
+        <div className="w-5/12 flex sm:justify-end items-start">
           <button className="text-white text-xs font-bold bg-gh-gray-700 rounded border-gh-border border items-center px-3 py-1">
             Follow
           </button>

@@ -16,7 +16,7 @@ function DeveloperList() {
   //Render list of trending developers
   return (
     <>
-      <nav className="flex justify-between items-center p-5 mt-10 bg-gh-gray-900 rounded border border-gh-border">
+      <nav className="flex flex-col md:flex-row sm:flex-row justify-between items-center p-5 mt-10 bg-gh-gray-900 rounded border border-gh-border">
         <NavBar />
         <DeveloperFilters />
       </nav>

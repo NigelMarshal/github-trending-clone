@@ -16,3 +16,10 @@
     padding-left: 40px !important;
   }
 }
+
+@media (min-width: 1012px) {
+  .pdng-responsive {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+}
