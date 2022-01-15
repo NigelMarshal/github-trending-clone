@@ -13,7 +13,7 @@ function Repo() {
   //Render list of trending repos
   return (
     <>
-      <nav className="flex p-5 mt-10 bg-gh-gray-900 rounded border border-gh-border">
+      <nav className="flex flex-col md:flex-row sm:flex-row justify-between items-center p-5 mt-10 bg-gh-gray-900 rounded border border-gh-border">
         <NavBar />
         <RepoFilters />
       </nav>
