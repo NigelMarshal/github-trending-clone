@@ -1,5 +1,6 @@
 import React from "react";
-import Select from "react-select";
+import Select, { components } from "react-select";
+import { Icon } from "@iconify/react";
 
 const optionsProgrammingLanguages = [
   { label: "React", value: "react" },
@@ -35,6 +36,14 @@ function customTheme(theme) {
   };
 }
 
+const DropdownIndicator = (props) => {
+  return (
+    <components.DropdownIndicator {...props}>
+      <Icon icon="ant-design:caret-down-filled" width={12} />
+    </components.DropdownIndicator>
+  );
+};
+
 const customStyles = {
   control: (css) => ({
     ...css,
@@ -55,34 +64,35 @@ const RepoFilters = () => {
     <div className="flex flex-col text-sm md:flex-row sm:flex-row mt-3 sm:mt-0 md:mt-0">
       <div style={{ width: "210px" }}>
         <Select
+          components={{ DropdownIndicator }}
           styles={customStyles}
           isSearchable
           theme={customTheme}
-          className="mr-3"
+          className="pr-3"
           options={optionsSpokenLanguages}
           placeholder="Spoken Language: Any"
         />
       </div>
       <div style={{ width: "160px" }}>
         <Select
+          components={{ DropdownIndicator }}
           styles={customStyles}
           isSearchable
           theme={customTheme}
-          className="mr-3"
+          className="pr-3"
           options={optionsProgrammingLanguages}
           placeholder="Language: Any"
         />
       </div>
-      <div style={{ width: "190px" }}>
-        <Select
-          isSearchable={false}
-          theme={customTheme}
-          styles={customStyles}
-          className="mr-3"
-          options={optionsDates}
-          placeholder="Date Range: Today"
-        />
-      </div>
+
+      <Select
+        components={{ DropdownIndicator }}
+        isSearchable={false}
+        theme={customTheme}
+        styles={customStyles}
+        options={optionsDates}
+        placeholder="Date Range: Today"
+      />
     </div>
   );
 };
