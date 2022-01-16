@@ -24,20 +24,19 @@
   }
 }
 
-.react-select__menu-list {
-  background-color: #161b22;
-  color: white;
-  border-radius: 5px;
-  border: solid 1px #30363d;
-}
-
 .react-select__menu {
   background-color: transparent !important;
-}
+  &-list {
+    background-color: #161b22;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #30363d;
+  }
 
-.react-select__option {
-  border-bottom: solid 1px #21262d;
-}
-.react-select__option:last-child {
-  border-bottom: none;
+  &__option {
+    border-bottom: solid 1px #21262d;
+  }
+  &__option:last-child {
+    border-bottom: none;
+  }
 }

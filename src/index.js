@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./assets/css/tailwind.css";
+import "./assets/css/tailwind.scss";
 
 import App from "./App";
 
