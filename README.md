@@ -20,20 +20,20 @@ https://user-images.githubusercontent.com/11574237/149673693-a16ae038-2b87-4482-
 
 
 
-Bootstrapped with CRA, the user can interact with either the developer page or repository page through react router and data is being fetched from a custom API to load in trending data. The app is setup to run a proxy for API calls to prevent CORS issues.
+Bootstrapped with CRA, the user can interact with either the developer page or repository page through react router and data is being fetched from a custom API, to load in the trending data. The app is setup to run a proxy for API calls to prevent CORS issues.
 
-I used Tailwind CSS and set a custom theme to match the GitHub colour palette. For data fetching I paired axios with react query to handle data fetching, error handling and caching without needing to incorporate state management. I've used react select to emulate the filter dropdowns and users can search through the options they want and select. The API has some limitations so it was not possible to filter data through use effect; however the flexibility is there thanks to the callback functions react select provides.
+I used Tailwind CSS and set a custom theme to match the GitHub colour palette. For data fetching I paired axios with react query as it can handle data fetching, error handling and caching without needing to incorporate state management. I've also used react select to emulate the filter dropdowns and users can search through the options they want and select. The API has some limitations so it was not possible to filter data through use effect; however the flexibility is there, thanks to the callback functions react select provides.
 
 ![How to use](https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif)
 
-## How to get this up on running?
+## How to get this up and running on my machine?
 
 Just clone this repo
 
 `cd` into the cloned folder
 
-run `npm install` for the dependencies
+run `npm install` to install the necessary packages
 
-and then `npm start` to boot up local server
+and then run `npm start` to boot up local server which will load the home page(redirects to /trending)
 
-EZ PZ
+And you're all ready to go!
