@@ -6,7 +6,7 @@ import RepoFilters from "../Filters/RepoFilters";
 
 //Fetch data through CORS proxy
 const fetchRepos = () => {
-  return axios.get("https://gh-trending-api.herokuapp.com/repositories");
+  return axios.get("/repositories");
 };
 function Repo() {
   const { isLoading, data, isError, error } = useQuery("repos", fetchRepos);

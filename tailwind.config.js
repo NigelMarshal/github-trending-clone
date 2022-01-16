@@ -28,6 +28,7 @@ module.exports = {
         "gh-light-blue": "#1f6feb",
         "gh-link-blue": "#58a6ff",
         "gh-orange": "#c06a08",
+        "gh-highlight": "#e3b341",
       },
     },
   },

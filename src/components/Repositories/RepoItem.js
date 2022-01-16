@@ -1,18 +1,11 @@
 import { Icon } from "@iconify/react";
+import FavouriteButton from "../UI/FavouriteButton";
 
 function RepoItem({ repo }) {
   return (
     <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4">
       <div className="float-right">
-        <button className="text-white text-xs font-bold py-1 px-5 flex bg-gh-gray-900 rounded border-gh-border border items-center">
-          <Icon
-            className="text-gh-gray-100 mr-2 "
-            icon="octicon:star-16"
-            height={15}
-            width={15}
-          />
-          Star
-        </button>
+        <FavouriteButton />
       </div>
       <h1 className="font-bold">
         <a

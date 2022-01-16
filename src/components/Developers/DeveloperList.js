@@ -5,7 +5,7 @@ import NavBar from "../NavBar";
 import DeveloperFilters from "../Filters/DeveloperFilters";
 //Fetch data through CORS proxy
 const fetchDevelopers = () => {
-  return axios.get("https://gh-trending-api.herokuapp.com/developers");
+  return axios.get("/developers");
 };
 function DeveloperList() {
   const { isLoading, data, isError, error } = useQuery(
