@@ -13,11 +13,11 @@ function Repo() {
   //Render list of trending repos
   return (
     <>
-      <nav className="flex flex-col md:flex-row sm:flex-row justify-between items-center p-4 mt-10 bg-gh-gray-900 rounded border border-gh-border">
+      <nav className="flex flex-col md:flex-row sm:flex-row justify-between items-center p-4 mt-10 bg-gh-gray-900 rounded-t-lg border border-gh-border">
         <Navbar />
         <RepoFilters />
       </nav>
-      <div className="rounded border border-gh-border border-t-0">
+      <div className="rounded-b-lg border border-gh-border border-t-0">
         {isError && <h2>{error.message}</h2>}
         {isLoading && (
           <p className="m-2 text-white">Fetching trending items...</p>
