@@ -1,6 +1,15 @@
+import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import FollowButton from "../UI/FollowButton";
+import SponsorButton from "../UI/SponsorButton";
+
 function DeveloperCard({ developer }) {
+  const [randomVal, setRandomVal] = useState(0);
+
+  //Generate random value only on component mount
+  useEffect(() => {
+    setRandomVal(Math.random() < 0.5);
+  }, []);
   return (
     <article className="border border-gh-border border-t-0 border-l-0 border-r-0 last:rounded-b-lg last:border-b-0 p-4 flex">
       <a className="text-gray-500" href={"#pa-" + developer.username}>
@@ -62,6 +71,9 @@ function DeveloperCard({ developer }) {
           </div>
         </div>
         <div className="w-5/12 flex sm:justify-end items-start">
+          {/* Since the API has no data pertaining to sponsor details 
+          I've randomized the rendering of the sponsor button to emulate the real life application */}
+          {randomVal && <SponsorButton />}
           <FollowButton />
         </div>
       </div>

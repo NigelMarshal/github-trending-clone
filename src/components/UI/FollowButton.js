@@ -7,7 +7,7 @@ const FollowButton = () => {
     <>
       <button
         onClick={() => setFollow(!follow)}
-        className="text-white text-xs font-bold bg-gh-gray-700 rounded border-gh-border border items-center px-3 py-1"
+        className="text-gh-gray-500 text-xs font-bold bg-gh-gray-700 rounded border-gh-border border items-center px-3 py-1 hover:border-gh-gray-100"
       >
         {!follow ? "Follow" : "Unfollow"}
       </button>
