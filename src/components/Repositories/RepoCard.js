@@ -26,7 +26,7 @@ function RepoCard({ repo }) {
       {repo.description && (
         <p className="text-gray-500 text-sm mb-2">{repo.description}</p>
       )}
-      <div className="text-gray-500 mr-3 flex flex-row text-xs flex-wrap">
+      <div className="text-gray-500 mt-2 flex flex-row text-xs flex-wrap">
         {repo.language && (
           <span className="mr-3 mb-2 lg:mb-0 md:mb-0">{repo.language}</span>
         )}
