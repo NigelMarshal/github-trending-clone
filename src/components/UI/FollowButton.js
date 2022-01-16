@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+//set up follow toggle on click
 const FollowButton = () => {
   const [follow, setFollow] = useState(false);
   return (

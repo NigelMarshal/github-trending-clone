@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import FollowButton from "../UI/FollowButton";
-function DeveloperItem({ developer }) {
+function DeveloperCard({ developer }) {
   return (
     <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4 flex">
       <a className="text-gray-500" href={"#pa-" + developer.username}>
@@ -69,4 +69,4 @@ function DeveloperItem({ developer }) {
   );
 }
 
-export default DeveloperItem;
+export default DeveloperCard;

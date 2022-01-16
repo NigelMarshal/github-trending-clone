@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useQuery } from "react-query";
-import RepoItem from "./RepoItem";
-import NavBar from "../NavBar";
+import RepoCard from "./RepoCard";
+import Navbar from "../Navbar";
 import RepoFilters from "../Filters/RepoFilters";
 
 //Fetch data through CORS proxy
@@ -14,7 +14,7 @@ function Repo() {
   return (
     <>
       <nav className="flex flex-col md:flex-row sm:flex-row justify-between items-center p-5 mt-10 bg-gh-gray-900 rounded border border-gh-border">
-        <NavBar />
+        <Navbar />
         <RepoFilters />
       </nav>
       <div className="rounded border border-gh-border border-t-0">
@@ -23,7 +23,7 @@ function Repo() {
           <p className="m-2 text-white">Fetching trending items...</p>
         )}
         {data &&
-          data?.data.map((repo) => <RepoItem key={repo.rank} repo={repo} />)}
+          data?.data.map((repo) => <RepoCard key={repo.rank} repo={repo} />)}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import FavouriteButton from "../UI/FavouriteButton";
 
-function RepoItem({ repo }) {
+function RepoCard({ repo }) {
   return (
     <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4">
       <div className="float-right">
@@ -79,4 +79,4 @@ function RepoItem({ repo }) {
   );
 }
 
-export default RepoItem;
+export default RepoCard;

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <ul className="flex">
       <li>
@@ -26,4 +26,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

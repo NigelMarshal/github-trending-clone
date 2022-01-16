@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 
+//Set up click toggle for favouriting items
 const FavouriteButton = () => {
   const [favourite, setFavourite] = useState(false);
   return (
     <>
       <button
         onClick={() => setFavourite(!favourite)}
-        className="text-white text-xs font-bold py-1 px-5 flex bg-gh-gray-900 rounded border-gh-border border items-center"
+        className="text-white text-xs font-bold py-1 px-5 flex bg-gh-gray-700 rounded border-gh-border border items-center"
       >
         <Icon
           className={`${

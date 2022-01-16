@@ -2,6 +2,7 @@ import React from "react";
 import Select, { components } from "react-select";
 import { Icon } from "@iconify/react";
 
+//Set up options for repo filters
 const optionsProgrammingLanguages = [
   { label: "React", value: "react" },
   { label: "ReactNative", value: "react-native" },
@@ -19,6 +20,7 @@ const optionsDates = [
   { label: "This week", value: "week" },
   { label: "This month", value: "month" },
 ];
+//set up theme and custom styles to override react-select default styles
 function customTheme(theme) {
   return {
     ...theme,
@@ -36,6 +38,7 @@ function customTheme(theme) {
   };
 }
 
+//replace default react-select dropdown icon with custom one
 const DropdownIndicator = (props) => {
   return (
     <components.DropdownIndicator {...props}>
