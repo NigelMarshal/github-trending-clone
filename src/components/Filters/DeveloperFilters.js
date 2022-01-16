@@ -4,16 +4,26 @@ import { Icon } from "@iconify/react";
 
 //Set up options for filters
 const optionsProgrammingLanguages = [
-  { label: "React", value: "react" },
-  { label: "ReactNative", value: "react-native" },
-  { label: "Javascript", value: "js" },
-  { label: "Typescript", value: "css" },
+  {
+    label: "Select a language",
+    options: [
+      { label: "React", value: "react" },
+      { label: "ReactNative", value: "react-native" },
+      { label: "Javascript", value: "js" },
+      { label: "Typescript", value: "css" },
+    ],
+  },
 ];
 
 const optionsDates = [
-  { label: "Today", value: "today" },
-  { label: "This week", value: "week" },
-  { label: "This month", value: "month" },
+  {
+    label: "Adjust time span",
+    options: [
+      { label: "Today", value: "today" },
+      { label: "This week", value: "week" },
+      { label: "This month", value: "month" },
+    ],
+  },
 ];
 //Set up custom theme to override react select default styles
 function customTheme(theme) {
@@ -61,6 +71,7 @@ const DeveloperFilters = () => {
     <div className="flex flex-col text-sm md:flex-row sm:flex-row mt-3 sm:mt-0 md:mt-0">
       <div style={{ width: "160px" }}>
         <Select
+          classNamePrefix="react-select"
           components={{ DropdownIndicator }}
           styles={customStyles}
           isSearchable
@@ -71,6 +82,7 @@ const DeveloperFilters = () => {
         />
       </div>
       <Select
+        classNamePrefix="react-select"
         components={{ DropdownIndicator }}
         styles={customStyles}
         isSearchable={false}
