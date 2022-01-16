@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import FollowButton from "../UI/FollowButton";
 function DeveloperItem({ developer }) {
   return (
     <article className="border border-gh-border border-t-0 border-l-0 border-r-0 p-4 flex">
@@ -61,9 +62,7 @@ function DeveloperItem({ developer }) {
           </div>
         </div>
         <div className="w-5/12 flex sm:justify-end items-start">
-          <button className="text-white text-xs font-bold bg-gh-gray-700 rounded border-gh-border border items-center px-3 py-1">
-            Follow
-          </button>
+          <FollowButton />
         </div>
       </div>
     </article>
