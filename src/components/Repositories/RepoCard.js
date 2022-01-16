@@ -55,10 +55,10 @@ function RepoCard({ repo }) {
             {repo.builtBy.map((developer, i) => (
               <a href={developer.url} key={i}>
                 <img
-                  className="rounded-full mx-0.5"
+                  className="rounded-full ml-1 mr-0.5"
                   src={developer.avatar}
-                  width={25}
-                  height={25}
+                  width={20}
+                  height={20}
                   alt=""
                 />
               </a>
