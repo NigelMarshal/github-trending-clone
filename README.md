@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+![What is this](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub Trending Page Clone
 
-## Available Scripts
+I created a clone of the GitHub Trending page built with React and styled with Tailwind. It consists of two pages which are routed through react router and pulling in API data with React query and axios. The custom dropdown filters are made using react-select and are searchable. Users can view the latest trending repos and developers just like the GitHub trending page and the page is responsive...of course. 
 
-In the project directory, you can run:
+## Technologies used:
 
-### `npm start`
+- ReactJS bootstrapped with CRA
+- Tailwind CSS (Initially I was going to go with Primer but decided to go with Tailwind due to it being light weight and I wanted flexibility with customization. The app did not justify just yet to use a full blown component library)
+- React query
+- Axios
+- React select
+- Iconify API for icons
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tell me more details!
 
-### `npm test`
+Bootstrapped with CRA, the user can interact with either the developer page or repository page through react router and data is being fetched from a custom API to load in trending data. The app is setup to run a proxy for API calls to prevent CORS issues.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used Tailwind CSS and set a custom theme to match the GitHub colour palette. For data fetching I paired axios with react query to handle data fetching, error handling and caching without needing to incorporate state management. I've used react select to emulate the filter dropdowns and users can search through the options they want and select. The API has some limitations so it was not possible to filter data through use effect; however the flexibility is there thanks to the callback functions react select provides.
 
-### `npm run build`
+![How to use](https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to get this up on running?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Just clone this repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`cd` into the cloned folder
 
-### `npm run eject`
+run `npm install` for the dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+and then `npm start` to boot up local server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+EZ PZ
