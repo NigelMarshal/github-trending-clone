@@ -16,6 +16,10 @@ I created a clone of the GitHub Trending page built with React and styled with T
 
 ## Tell me more details!
 
+https://user-images.githubusercontent.com/11574237/149673693-a16ae038-2b87-4482-8366-ff40748bb009.mp4
+
+
+
 Bootstrapped with CRA, the user can interact with either the developer page or repository page through react router and data is being fetched from a custom API to load in trending data. The app is setup to run a proxy for API calls to prevent CORS issues.
 
 I used Tailwind CSS and set a custom theme to match the GitHub colour palette. For data fetching I paired axios with react query to handle data fetching, error handling and caching without needing to incorporate state management. I've used react select to emulate the filter dropdowns and users can search through the options they want and select. The API has some limitations so it was not possible to filter data through use effect; however the flexibility is there thanks to the callback functions react select provides.
